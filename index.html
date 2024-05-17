@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grelhasol</title>
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/source/img/logo branca.png">
+</head>
+<body>
+
+    <div class="top-bar">
+        <p class="top-bar-text">Qualidade e estilo além da superficie!</p>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo" src="/source/img/logo branca.png" alt="Logo Grelhasol">
+            </a>
+        </div>
+        
+        <div class="search">
+            <form action="/pesquisar" method="GET" class="search-form">
+                <input type="text" id="search" name="q" class="search-input" placeholder="Encontre a solução ideal" required>
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+        </div>
+        
+        <div class="cart-login-container">
+            <a href="/source/Pages/cart.html" class="cart-link">
+                <img class="cartimg" src="/source/img/Carrinho GS.png" alt="">
+                <span id="cart-count">0</span>
+            </a>
+            
+            <span class="space"></span> 
+            
+            <a href="/source/Pages/login.html" class="login-link">
+                <img class="cartimg" src="/source/img/Login GS.png" alt="Faça Login">
+            </a>
+        </div>
+    </header>
+    
+    
+       
+
+    <nav class="menunav menu-container">
+            <ul class="menu">
+                <li ><a href="#">Grelhas com Suporte</a></li>
+                <li ><a href="#">Grelhas com Coletores</a></li>
+                <li ><a href="#">Tampas</a></li>
+                <li ><a href="#">Diversos</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <img class="banner1" src="/source/img/Sem Título-1.jpg" alt="">
+        </div>
+
+        <Div class="banner2">
+            <ul class="menu">
+                <li><img class="banner2l1" src="/source/img/Frete Gratis.png" alt="">Frete Gratis <br>acima de R$ 150</li>
+                <li><img class="banner2l" src="/source/img/Suporte.png" alt="">Suporte Segunda a <br>sexta das 7:30 às 17:18</li>
+                <li><img class="banner2l" src="/source/img/Pagamento.png" alt="">Compra em até <br>3x Sem Juros</li>
+                <li><img class="banner2l" src="/source/img/Mercado livre.png" alt="">Pagamento seguro <br>Com MercadoPago</li>
+            </ul>
+        </Div>
+        <br>
+
+        <div class="featured-products">
+            <h2>Produtos em Destaque!</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="/source/img/GC8X50MTS.jpg" alt="Grelha c/ Coletor 8x50 multipla saida com tela">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do produto 1.</p>
+                    <p class="price">R$ 38,99</p>
+                    <button class="add-to-cart" onclick="addToCart('Produto 1', 38.99, '/source/img/GC8X50MTS.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <img src="/source/img/GS15X100E.jpg" alt="Grelha 15x100 Espinhal">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do produto 2.</p>
+                    <p class="price">R$ 78,99</p>
+                    <button class="add-to-cart" onclick="addToCart('Produto 2', 78.99, '/source/img/GS15X100E.jpg')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <img src="/source/img/GS20X100RDT.jpg" alt="Grelha 20x100 reta diagonal">
+                    <h3>Produto 3</h3>
+                    <p>Descrição do produto 3.</p>
+                    <p class="price">R$ 78,43</p>
+                    <button class="add-to-cart" onclick="addToCart('Produto 3', 78.43, '/source/img/GS20X100RDT.jpg')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        
+            <div class="banner-container">
+                <div class="banner">
+                    <img src="/source/img/banner1.png" alt="Banner 1">
+                </div>
+                <div class="banner">
+                    <img src="/source/img/banner2.png" alt="Banner 2">
+                </div>
+            </div>
+
+            <div class="newsletter-container">
+                <h2 class="newsletter-title">Inscreva-se para receber novidades e promoções</h2>
+                <form action="/subscribe" method="POST" class="newsletter-form">
+                    <input type="email" name="email" class="newsletter-input" placeholder="Seu e-mail" required>
+                    <button type="submit" class="newsletter-button">Inscrever-se</button>
+                </form>
+            </div>
+        
+        <div class="wppcontainer">
+            <a href="https://wa.me/+5541997436790">
+                <img class="wpp" src="/source/img/whatsapp.png" alt="Link Whatsapp">
+            </a>
+        </div>
+                        
+        <footer>
+            <div class="footer-section">
+                <h2>Institucional</h2>
+                <ul>
+                    <li><a href="/sobre">A Grelhasol</a></li>
+                    <li><a href="/seguranca">Segurança</a></li>
+                    <li><a href="/procedencia">Procedência</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section">
+                <h2>Categorias</h2>
+                <ul>
+                    <li><a href="/categorias/grelhas-com-suporte">Grelhas com Suporte</a></li>
+                    <li><a href="/categorias/grelhas-com-coletores">Grelhas com Coletores</a></li>
+                    <li><a href="/categorias/tampas">Tampas</a></li>
+                    <li><a href="/categorias/diversos">Diversos</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section">
+                <h2>Fale conosco</h2>
+                <ul>
+                    <li>grelhasol@grelhasol.com.br</li>
+                    <li>(16) 9 9999 9999</li>
+                    <li>Horário de atendimento das X às X</li>
+                </ul>
+            </div>
+        
+            <div class="footer-section">
+                <h2>Grelhasol</h2>
+                <p>Grelhasol Fundição de Metais LTDA.</p>
+                <p>R. Rio Amazonas, 730 - Jd. Jockey Clube,</p>
+                <p>São Carlos - SP, 13566-xxx</p>
+                <img src="/source/img/logo.png" alt="Logo Grelhasol">
+            </div>
+        </footer>
+        
+        
+    <script src="source/js/script.js"></script>    
+</body>
+</html>
